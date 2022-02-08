@@ -1,0 +1,44 @@
+.card {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgb(115, 232, 232);
+  margin: 5% 20%;
+  padding: 20px;
+}
+
+.card__headline {
+  font-size: 2rem;
+}
+
+.card__question {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.card__button--center {
+  text-align: center;
+}
+
+.card__button {
+  padding: 20px 70px;
+  border: 1px solid gray;
+  background-color: aquamarine;
+  margin: 30px;
+  font-size: 1.3rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+.card__tags {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.card__tags--item {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: aquamarine;
+}

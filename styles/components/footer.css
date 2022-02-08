@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0;
+  background-color: cadetblue;
+  padding: 10px;
+}
+
+.footer__icons {
+  font-size: 50px;
+  color: black;
+}
