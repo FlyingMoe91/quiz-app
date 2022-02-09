@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: fixed;
   width: 100%;
   overflow: hidden;
