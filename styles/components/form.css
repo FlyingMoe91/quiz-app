@@ -1,0 +1,19 @@
+.body__create {
+  background-color: rgb(115, 232, 232);
+}
+
+.create__form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+
+.create__form--submit {
+  margin: 30px auto;
+  padding: 5px;
+  width: 150px;
+  border-radius: 6px;
+  background-color: aquamarine;
+}
