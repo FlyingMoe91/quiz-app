@@ -2,7 +2,7 @@
   border: 1px solid black;
   border-radius: 15px;
   background-color: rgb(115, 232, 232);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 
   margin: 30px;
   padding: 20px;
