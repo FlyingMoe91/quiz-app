@@ -3,13 +3,20 @@
   border-radius: 15px;
   background-color: rgb(115, 232, 232);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-
   margin: 30px;
   padding: 20px;
+  position: relative;
 }
 
 .card__headline {
   font-size: 2rem;
+}
+
+.card__bookmark {
+  font-size: 40px;
+  position: absolute;
+  right: 40px;
+  top: -15px;
 }
 
 .card__question {
