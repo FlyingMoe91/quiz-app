@@ -25,6 +25,11 @@
   margin: 5px;
 }
 
+.card__answer {
+  text-align: center;
+  margin: 5px;
+}
+
 .card__button {
   display: block;
   margin: 30px auto;
