@@ -34,3 +34,4 @@ bkunselected.addEventListener('click', () => {
 });
 
 const test = 'hello';
+console.log(test);
