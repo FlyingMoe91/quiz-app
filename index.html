@@ -9,22 +9,24 @@
       src="https://kit.fontawesome.com/d1588ff71a.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="index.js"></script>
     <title>Quiz App</title>
   </head>
   <body>
-    <header class="header">
+    <main class="main__card">
+    <div class="header">
       <h1 class="header__headline">Quiz-App</h1>
-      <p style="font-size: 1.3rem; color: rgb(124, 21, 21); margin: 0">
+    </div>
+      <p style="text-align:center; font-size: 1.3rem; color: rgb(255, 4, 4); margin: 0">
         !!!Mobile-version!!!
       </p>
-    </header>
-    <main>
       <section class="card">
-        <i class="card__bookmark far fa-bookmark"></i>
+        <button data-js="bookmark-unseleted" class="card__bookmark far fa-bookmark"></button>
+        <button data-js="bookmark-selected" class="card__bookmark--selected hidden fas fa-bookmark"></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">What was Walt Disney afraid of?</p>
-        <button class="card__button">show answer</button>
-        <p class="card__answer">Mice.</p>
+        <button data-js="showAnswer1" class="card__button">show answer</button>
+        <p data-js="answer1" class="card__answer hidden-answer">Mice.</p>
         <ul class="card__tags">
           <li class="card__tags--item"><a href="">link</a></li>
           <li class="card__tags--item"><a href="">another link</a></li>
@@ -33,14 +35,15 @@
         </ul>
       </section>
       <section class="card">
-        <i class="card__bookmark fas fa-bookmark"></i>
+        <button data-js="bookmark-unseleted" class="card__bookmark far fa-bookmark"></button>
+        <button data-js="bookmark-selected" class="card__bookmark--selected hidden fas fa-bookmark"></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
           What country has a unicorn as part of its national emblem?</p>
-        <button class="card__button">show answer</button>
-        <p class="card__answer">Scotland.</p>
+        <button data-js="showAnswer2" class="card__button">show answer</button>
+        <p data-js="answer2" class="card__answer hidden-answer">Scotland.</p>
         <ul class="card__tags">
-          <ul class="card__tags">
+          <ul class="card__tags" role="list">
             <li class="card__tags--item"><a href="">link</a></li>
             <li class="card__tags--item"><a href="">another link</a></li>
             <li class="card__tags--item"><a href="">three?</a></li>
@@ -48,14 +51,15 @@
           </ul>
       </section>
       <section class="card">
-        <i class="card__bookmark far fa-bookmark"></i>
+        <button data-js="bookmark-unseleted" class="card__bookmark far fa-bookmark"></button>
+        <button data-js="bookmark-selected" class="card__bookmark--selected hidden fas fa-bookmark"></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
           How many miles is New Zealand's Ninety Mile Beach?
         </p>
-        <button class="card__button">show answer</button>
-        <p class="card__answer">55 miles.</p>
-        <ul class="card__tags">
+        <button data-js="showAnswer3" class="card__button">show answer</button>
+        <p data-js="answer3" class="card__answer hidden-answer">55 miles.</p>
+        <ul class="card__tags" role="list">
           <li class="card__tags--item"><a href="">link</a></li>
           <li class="card__tags--item"><a href="">another link</a></li>
           <li class="card__tags--item"><a href="">three?</a></li>
@@ -63,15 +67,15 @@
         </ul>
       </section>
       <section class="card">
-        <i class="card__bookmark fas fa-bookmark"></i>
-        <i class="card__bookmark fas fa-bookmark"></i>
+        <button data-js="bookmark-unseleted" class="card__bookmark far fa-bookmark"></button>
+        <button data-js="bookmark-selected" class="card__bookmark--selected hidden fas fa-bookmark"></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
           How many miles is New Zealand's Ninety Mile Beach?
         </p>
-        <button class="card__button">show answer</button>
-        <p class="card__answer">55 miles.</p>
-        <ul class="card__tags">
+        <button data-js="showAnswer4" class="card__button">show answer</button>
+        <p data-js="answer4" class="card__answer hidden-answer">55 miles.</p>
+        <ul class="card__tags" role="list">
           <li class="card__tags--item"><a href="">link</a></li>
           <li class="card__tags--item"><a href="">another link</a></li>
           <li class="card__tags--item"><a href="">three?</a></li>
