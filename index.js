@@ -32,3 +32,5 @@ const bkselected = document.querySelector('[data-js=bookmark-selected]');
 bkunselected.addEventListener('click', () => {
   bkselected.classList.toggle('hidden');
 });
+
+const test = 'hello';
