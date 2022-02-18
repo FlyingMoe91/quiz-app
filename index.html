@@ -9,11 +9,11 @@
       src="https://kit.fontawesome.com/d1588ff71a.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="index.js"></script>
+    <script defer src="./index.js" type="module"></script>
     <title>Quiz App</title>
   </head>
   <body>
-    <main class="main__card">
+    <main data-page="home" class="main__card">
       <div class="header">
         <h1 class="header__headline">Quiz-App</h1>
       </div>
@@ -114,19 +114,95 @@
         </ul>
       </section>
     </main>
+    <main data-page="bookmarks" class="hidden">
+      <div class="header">
+        <h1 class="header__headline">Bookmarks</h1>
+      </div>
+      <section class="card">
+        <i class="card__bookmark fas fa-bookmark"></i>
+        <div class="card__headline">Question:</div>
+        <p class="card__question">
+          What country has a unicorn as part of its national emblem?
+        </p>
+        <button class="card__button">show answer</button>
+        <p class="card__answer">Scotland.</p>
+        <ul class="card__tags" role="list">
+          <li class="card__tags--item"><a href="">link</a></li>
+          <li class="card__tags--item"><a href="">another link</a></li>
+          <li class="card__tags--item"><a href="">three?</a></li>
+          <li class="card__tags--item"><a href="">seriously?</a></li>
+        </ul>
+      </section>
+      <section class="card">
+        <i class="card__bookmark fas fa-bookmark"></i>
+        <i class="card__bookmark fas fa-bookmark"></i>
+        <div class="card__headline">Question:</div>
+        <p class="card__question">
+          How many miles is New Zealand's Ninety Mile Beach?
+        </p>
+        <button class="card__button">show answer</button>
+        <p class="card__answer">55 miles.</p>
+        <ul class="card__tags" role="list">
+          <li class="card__tags--item"><a href="">link</a></li>
+          <li class="card__tags--item"><a href="">another link</a></li>
+          <li class="card__tags--item"><a href="">three?</a></li>
+          <li class="card__tags--item"><a href="">seriously?</a></li>
+        </ul>
+      </section>
+    </main>
+    <main data-page="create" class="body__create hidden">
+      <div class="header">
+        <h1 class="header__headline">Create</h1>
+      </div>
+      <form class="create__form">
+        <label for="question">Add question</label>
+        <textarea name="question" id="question" cols="30" rows="9"></textarea>
+        <label for="answer">Add answer</label>
+        <textarea name="answer" id="answer" cols="30" rows="9"></textarea>
+        <label for="tags">Add tags</label>
+        <input type="text" id="tags" />
+        <button class="create__form--submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <main data-page="profile" class="hidden">
+      <div class="header">
+        <h1 class="header__headline">Profile</h1>
+      </div>
+      <div class="profile__main">
+        <div class="profile-pic__head">
+          <img class="profile-pic" src="/images/profilepic.jpg" />
+          <h2>Jon Doe</h2>
+        </div>
+        <p class="profile--text">
+          John Doe, weibliches Pendant: Jane Doe, ist ein englischer
+          Platzhaltername für fiktive oder nicht identifizierte Personen. John
+          ist einer der häufigsten englischen Männernamen. „Doe“ bezeichnet eine
+          Hirschkuh. Der Begriff ist vor allem in den Vereinigten Staaten
+          gebräuchlich.
+        </p>
+        <label for="profile-tags">Skills</label>
+        <ul id="profile-tags" class="profile__tags--list">
+          <li><a class="profile__tags-item" href="">Identity theft</a></li>
+          <li><a class="profile__tags-item" href="">Hunting</a></li>
+          <li><a class="profile__tags-item" href="">Actor</a></li>
+          <li><a class="profile__tags-item" href="">Musician</a></li>
+        </ul>
+        <button class="profile--logout">Log out</button>
+      </div>
+    </main>
     <footer class="footer">
-      <a href="#" class="footer__icons footer__icons--located"
-        ><i class="fas fa-home"></i
-      ></a>
-      <a href="/pages/bookmarks.html" class="footer__icons"
-        ><i class="far fa-bookmark"></i
-      ></a>
-      <a href="/pages/create.html" class="footer__icons"
-        ><i class="far fa-plus-square"></i
-      ></a>
-      <a href="/pages/profile.html" class="footer__icons"
-        ><i class="far fa-user-circle"></i
-      ></a>
+      <button data-nav="home" class="footer__icons footer-active">
+        <i class="fas fa-home"></i>
+      </button>
+      <button data-nav="bookmarks" class="footer__icons">
+        <i class="far fa-bookmark"></i>
+      </button>
+      <button data-nav="create" class="footer__icons">
+        <i class="far fa-plus-square"></i>
+      </button>
+      <button data-nav="profile" class="footer__icons">
+        <i class="far fa-user-circle"></i>
+      </button>
     </footer>
   </body>
 </html>

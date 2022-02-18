@@ -1,3 +1,7 @@
-.footer__icons--located {
+.footer-active {
   background-color: teal;
+}
+
+.hidden {
+  display: none;
 }

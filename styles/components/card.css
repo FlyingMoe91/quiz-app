@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 .hidden {
-  color: transparent;
+  visibility: hidden;
 }
 
 .card__question {
@@ -68,6 +68,7 @@
   background-color: aquamarine;
   font-size: 1.2rem;
   box-shadow: 5px 5px 5px black;
+  cursor: pointer;
 }
 
 .card__tags {
