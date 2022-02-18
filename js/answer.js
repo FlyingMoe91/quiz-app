@@ -1,9 +1,13 @@
 const answerBox1 = document.querySelector('[data-js=answer1]');
 const answerButton1 = document.querySelector('[data-js=showAnswer1');
+const showShow = document.querySelector('[data-js="show"]');
+const showHide = document.querySelector('[data-js="hide"]');
 
 function showAnswer() {
   answerButton1.addEventListener('click', () => {
     answerBox1.classList.toggle('hidden-answer');
+    showShow.classList.toggle('hide');
+    showHide.classList.toggle('hide');
   });
 
   const answerBox2 = document.querySelector('[data-js=answer2]');

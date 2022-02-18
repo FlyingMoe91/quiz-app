@@ -27,18 +27,17 @@
       >
         !!!Mobile-version!!!
       </p>
-      <section class="card">
+      <section data-js="card" class="card">
         <button
-          data-js="bookmark-unseleted"
-          class="card__bookmark far fa-bookmark"
-        ></button>
-        <button
-          data-js="bookmark-selected"
-          class="card__bookmark--selected hidden fas fa-bookmark"
+          data-js="bookmark"
+          class="card__bookmark far fas fa-bookmark"
         ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">What was Walt Disney afraid of?</p>
-        <button data-js="showAnswer1" class="card__button">show answer</button>
+        <button data-js="showAnswer1" class="card__button">
+          <span class="hidden" data-js="hide">hide</span>
+          <span data-js="show">show</span> answer
+        </button>
         <p data-js="answer1" class="card__answer hidden-answer">Mice.</p>
         <ul class="card__tags">
           <li class="card__tags--item"><a href="">link</a></li>
@@ -47,14 +46,10 @@
           <li class="card__tags--item"><a href="">seriously?</a></li>
         </ul>
       </section>
-      <section class="card">
+      <section data-js="card" class="card">
         <button
-          data-js="bookmark-unseleted"
-          class="card__bookmark far fa-bookmark"
-        ></button>
-        <button
-          data-js="bookmark-selected"
-          class="card__bookmark--selected hidden fas fa-bookmark"
+          data-js="bookmark"
+          class="card__bookmark far fas fa-bookmark"
         ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
@@ -69,14 +64,10 @@
           <li class="card__tags--item"><a href="">seriously?</a></li>
         </ul>
       </section>
-      <section class="card">
+      <section data-js="card" class="card">
         <button
-          data-js="bookmark-unseleted"
-          class="card__bookmark far fa-bookmark"
-        ></button>
-        <button
-          data-js="bookmark-selected"
-          class="card__bookmark--selected hidden fas fa-bookmark"
+          data-js="bookmark"
+          class="card__bookmark far fas fa-bookmark"
         ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
@@ -91,14 +82,10 @@
           <li class="card__tags--item"><a href="">seriously?</a></li>
         </ul>
       </section>
-      <section class="card">
+      <section data-js="card" class="card">
         <button
-          data-js="bookmark-unseleted"
-          class="card__bookmark far fa-bookmark"
-        ></button>
-        <button
-          data-js="bookmark-selected"
-          class="card__bookmark--selected hidden fas fa-bookmark"
+          data-js="bookmark"
+          class="card__bookmark far fas fa-bookmark"
         ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
@@ -118,8 +105,11 @@
       <div class="header">
         <h1 class="header__headline">Bookmarks</h1>
       </div>
-      <section class="card">
-        <i class="card__bookmark fas fa-bookmark"></i>
+      <section data-js="card" class="card">
+        <button
+          data-js="bookmark"
+          class="card__bookmark card__bookmark--selected far fas fa-bookmark"
+        ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
           What country has a unicorn as part of its national emblem?
@@ -133,9 +123,11 @@
           <li class="card__tags--item"><a href="">seriously?</a></li>
         </ul>
       </section>
-      <section class="card">
-        <i class="card__bookmark fas fa-bookmark"></i>
-        <i class="card__bookmark fas fa-bookmark"></i>
+      <section data-js="card" class="card">
+        <button
+          data-js="bookmark"
+          class="card__bookmark card__bookmark--selected far fas fa-bookmark"
+        ></button>
         <div class="card__headline">Question:</div>
         <p class="card__question">
           How many miles is New Zealand's Ninety Mile Beach?
