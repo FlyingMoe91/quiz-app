@@ -1,9 +1,10 @@
-const bkunselected = document.querySelector('[data-js=bookmark-unseleted]');
-const bkselected = document.querySelector('[data-js=bookmark-selected]');
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]');
 
 function bookmarked() {
-  bkunselected.addEventListener('click', () => {
-    bkselected.classList.toggle('hidden');
+  bookmarks.forEach(bookmark => {
+    bookmark.addEventListener('click', () => {
+      bookmark.classList.toggle('card__bookmark--selected');
+    });
   });
 }
 
