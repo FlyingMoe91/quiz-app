@@ -17,22 +17,12 @@
       <div class="header">
         <h1 class="header__headline">Quiz-App</h1>
       </div>
-      <p
-        style="
-          text-align: center;
-          font-size: 1.3rem;
-          color: rgb(255, 4, 4);
-          margin: 0;
-        "
-      >
-        !!!Mobile-version!!!
-      </p>
       <section data-js="card" class="card">
         <button
           data-js="bookmark"
           class="card__bookmark far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">What was Walt Disney afraid of?</p>
         <button data-js="showAnswer" class="card__button">
           <span class="hidden" data-js="hide">hide</span>
@@ -51,7 +41,7 @@
           data-js="bookmark"
           class="card__bookmark card__bookmark--selected far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">
           What country has a unicorn as part of its national emblem?
         </p>
@@ -72,7 +62,7 @@
           data-js="bookmark"
           class="card__bookmark far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">
           Why is it that food on airplanes tastes bad?
         </p>
@@ -95,7 +85,7 @@
           data-js="bookmark"
           class="card__bookmark card__bookmark--selected far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">
           How many miles is New Zealand's Ninety Mile Beach?
         </p>
@@ -121,7 +111,7 @@
           data-js="bookmark"
           class="card__bookmark card__bookmark--selected far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">
           What country has a unicorn as part of its national emblem?
         </p>
@@ -142,7 +132,7 @@
           data-js="bookmark"
           class="card__bookmark card__bookmark--selected far fas fa-bookmark"
         ></button>
-        <div class="card__headline">Question:</div>
+        <p class="card__headline">Question:</p>
         <p class="card__question">
           How many miles is New Zealand's Ninety Mile Beach?
         </p>
@@ -180,14 +170,14 @@
       <div class="profile__main">
         <div class="profile-pic__head">
           <img class="profile-pic" src="/images/profilepic.jpg" />
-          <h2>Jon Doe</h2>
+          <h2 class="profile__name">Jon Doe</h2>
         </div>
         <p class="profile--text">
-          John Doe, weibliches Pendant: Jane Doe, ist ein englischer
-          Platzhaltername für fiktive oder nicht identifizierte Personen. John
-          ist einer der häufigsten englischen Männernamen. „Doe“ bezeichnet eine
-          Hirschkuh. Der Begriff ist vor allem in den Vereinigten Staaten
-          gebräuchlich.
+          "John Doe" (male) and "Jane Doe" (female) are multiple-use placeholder
+          names that are used when the true name of a person is unknown or is
+          being intentionally concealed.In the context of law enforcement in the
+          United States, such names are often used to refer to a corpse whose
+          identity is unknown or unconfirmed.
         </p>
         <label for="profile-tags">Skills</label>
         <ul id="profile-tags" class="profile__tags--list">
@@ -199,19 +189,19 @@
         <button class="profile--logout">Log out</button>
       </div>
     </main>
-    <footer class="footer">
+    <nav class="footer">
       <button data-nav="home" class="footer__icons footer-active">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-home" alt="home"></i>
       </button>
       <button data-nav="bookmarks" class="footer__icons">
-        <i class="far fa-bookmark"></i>
+        <i class="far fa-bookmark" alt="bookmarks"></i>
       </button>
       <button data-nav="create" class="footer__icons">
-        <i class="far fa-plus-square"></i>
+        <i class="far fa-plus-square" alt="create"></i>
       </button>
       <button data-nav="profile" class="footer__icons">
-        <i class="far fa-user-circle"></i>
+        <i class="far fa-user-circle" alt="profile"></i>
       </button>
-    </footer>
+    </nav>
   </body>
 </html>

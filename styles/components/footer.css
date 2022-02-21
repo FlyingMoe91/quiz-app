@@ -19,8 +19,8 @@
   align-items: center;
   font-size: 30px;
   width: 100%;
-  background: cadetblue;
-  color: black;
+  background: rgb(0, 79, 216);
+  color: aliceblue;
   border: 0;
   cursor: pointer;
 }
