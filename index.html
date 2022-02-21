@@ -154,12 +154,32 @@
         <h1 class="header__headline">Create</h1>
       </div>
       <form class="create__form">
-        <label for="question">Add question</label>
-        <textarea name="question" id="question" cols="30" rows="9"></textarea>
-        <label for="answer">Add answer</label>
-        <textarea name="answer" id="answer" cols="30" rows="9"></textarea>
+        <label for="question"
+          >Add question <span data-js="counter-question"></span
+        ></label>
+        <textarea
+          data-js="input-question"
+          class="tc-black"
+          name="question"
+          id="question"
+          cols="30"
+          rows="9"
+          maxlength="300"
+        ></textarea>
+        <label for="answer"
+          >Add answer <span data-js="counter-answer"></span
+        ></label>
+        <textarea
+          data-js="input-answer"
+          class="tc-black"
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="9"
+          maxlength="300"
+        ></textarea>
         <label for="tags">Add tags</label>
-        <input type="text" id="tags" />
+        <input type="text" id="tags" class="tc-black" maxlength="30" />
         <button class="create__form--submit" type="submit">Submit</button>
       </form>
     </main>
